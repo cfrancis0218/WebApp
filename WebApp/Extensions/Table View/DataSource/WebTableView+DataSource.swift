@@ -17,6 +17,7 @@ extension MainVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let webCell = webTableView.dequeueReusableCell(withIdentifier: "webCell", for: indexPath) as! WebCell
         webCell.nameLabel.text = webData[indexPath.row].website
+        webCell.indexPosition = indexPath.row
         webCell.addSubview(webCell.openButton)
         return webCell
     }

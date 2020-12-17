@@ -24,6 +24,7 @@ extension MainVC {
     
     @objc func goToAddWebsite() {
         let addScreen = Add_Website_Screen()
+        addScreen.delegate = self
         navigationController?.pushViewController(addScreen, animated: true)
         
     }

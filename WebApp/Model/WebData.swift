@@ -8,8 +8,13 @@
 import Foundation
 import UIKit
 
-struct WebData {
-    var website: String
-    var link: URL
-    //var url: URL?
+class WebData {
+    var website = ""
+    var link = ""
+    
+    convenience init(website: String, link: String) {
+        self.init()
+        self.website = website
+        self.link = link
+    }
 }

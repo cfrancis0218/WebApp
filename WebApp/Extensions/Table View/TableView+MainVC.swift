@@ -11,11 +11,7 @@ import UIKit
 extension MainVC {
     
     func tableViewSetup() {
-        
-        webTableView.register(WebCell.self, forCellReuseIdentifier: "webCell")
-        webTableView.dataSource = self
-        webTableView.delegate = self
-        
+
         view.addSubview(webTableView)
         webTableView.translatesAutoresizingMaskIntoConstraints = false
         

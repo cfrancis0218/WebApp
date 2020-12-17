@@ -16,7 +16,9 @@ class WebCell: UITableViewCell {
         label.font = UIFont.systemFont(ofSize: 18, weight: .medium)
         return label
     }()
-
+    
+    var webData: [WebData]?
+    var indexPosition: Int?
     let openButton = Open_Button()
     
     required init?(coder aDecoder: NSCoder) {

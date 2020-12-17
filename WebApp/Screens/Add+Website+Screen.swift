@@ -8,10 +8,10 @@
 import UIKit
 
 protocol addWebsite {
-    func addSite(name: String, link: URL)
+    func addSite(name: String, link: String)
 }
 
-class Add_Website_Screen: UIViewController {
+class Add_Website_Screen: UIViewController, UITextFieldDelegate {
     
     let nameField = Name_TextField()
     let linkField = Link_TextField()
@@ -19,6 +19,7 @@ class Add_Website_Screen: UIViewController {
     let webCell = WebCell()
     let webData: WebData? = nil
     var delegate: addWebsite?
+    let detailWebVC = DetailVC()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,5 +27,6 @@ class Add_Website_Screen: UIViewController {
         textFieldSetup()
         addButtonConstraints()
         linkTextFields()
+        linkField.delegate = self
     }
 }

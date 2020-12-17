@@ -24,13 +24,13 @@ extension Add_Website_Screen {
     
     func linkTextFields() {
         webCell.nameLabel.text = nameField.text
-        linkField.text = webData?.link.absoluteURL.absoluteString
+        linkField.text = detailWebVC.webName
         
         addWebsiteButton.addTarget(self, action: #selector(ToTableView), for: .touchUpInside)
     }
     
     @objc func ToTableView() {
-        
+        self.delegate?.addSite(name: nameField.text!, link: linkField.text!)
         navigationController?.popToRootViewController(animated: true)
     }
 }

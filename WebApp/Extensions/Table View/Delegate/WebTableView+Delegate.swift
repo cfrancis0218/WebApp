@@ -13,6 +13,6 @@ extension MainVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let webView = DetailVC()
         navigationController?.pushViewController(webView, animated: true)
-        webView.url = webData[indexPath.row].link
+        webView.webName = webData[indexPath.row].link
     }
 }

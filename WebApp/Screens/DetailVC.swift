@@ -12,8 +12,7 @@ class DetailVC: UIViewController, WKNavigationDelegate {
     
     var webView: WKWebView!
     var webData: WebData!
-    
-    var url = URL(string: "https://www.youtube.com")!
+    var webName: String! = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()

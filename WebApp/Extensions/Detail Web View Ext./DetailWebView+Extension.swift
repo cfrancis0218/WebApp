@@ -7,6 +7,9 @@ import WebKit
 extension DetailVC {
     
     func loadWebsite() {
+        
+        let url = URL(string: "https://www.\(webName!).com")!
+        
         webView.load(URLRequest(url: url))
         webView.allowsBackForwardNavigationGestures = true
     }
