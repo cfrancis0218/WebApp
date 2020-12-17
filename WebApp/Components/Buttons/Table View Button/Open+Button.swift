@@ -21,6 +21,6 @@ class Open_Button: UIButton {
     
     func buttonSetup() {
         setTitle("Open", for: .normal)
-        setTitleColor(UIColor(red: 88/255.0, green: 66/255.0, blue: 66/255.0, alpha: 1.0), for: .normal)
+        setTitleColor(UIColor(red: 121/255.0, green: 145/255.0, blue: 203/255.0, alpha: 1.0), for: .normal)
     }
 }

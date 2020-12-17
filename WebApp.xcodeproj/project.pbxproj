@@ -21,6 +21,13 @@
 		53CBA4EB258257FF00AF8A78 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CBA4EA258257FF00AF8A78 /* MainVC.swift */; };
 		53CBA4F0258257FF00AF8A78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53CBA4EF258257FF00AF8A78 /* Assets.xcassets */; };
 		53CBA4F3258257FF00AF8A78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53CBA4F1258257FF00AF8A78 /* LaunchScreen.storyboard */; };
+		53D35EA9258BAF39008B42CB /* DetailWebView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D35EA8258BAF39008B42CB /* DetailWebView+Extension.swift */; };
+		53D35EAE258BB0BB008B42CB /* Add+Website+Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D35EAD258BB0BB008B42CB /* Add+Website+Button.swift */; };
+		53D35EB3258BB235008B42CB /* AddButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D35EB2258BB235008B42CB /* AddButton+Extension.swift */; };
+		53D7D2BD258B84DC005B015C /* Add+Website+Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D7D2BC258B84DC005B015C /* Add+Website+Screen.swift */; };
+		53D7D2C1258B85DA005B015C /* Name_TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D7D2C0258B85DA005B015C /* Name_TextField.swift */; };
+		53D7D2C4258B85E6005B015C /* Link_TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D7D2C3258B85E6005B015C /* Link_TextField.swift */; };
+		53D7D2C8258B878B005B015C /* TextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D7D2C7258B878B005B015C /* TextField+Extension.swift */; };
 		53EFF7412589A2CB005886D8 /* Open+Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EFF7402589A2CB005886D8 /* Open+Button.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +48,13 @@
 		53CBA4EF258257FF00AF8A78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53CBA4F2258257FF00AF8A78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53CBA4F4258257FF00AF8A78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53D35EA8258BAF39008B42CB /* DetailWebView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailWebView+Extension.swift"; sourceTree = "<group>"; };
+		53D35EAD258BB0BB008B42CB /* Add+Website+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Add+Website+Button.swift"; sourceTree = "<group>"; };
+		53D35EB2258BB235008B42CB /* AddButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddButton+Extension.swift"; sourceTree = "<group>"; };
+		53D7D2BC258B84DC005B015C /* Add+Website+Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Add+Website+Screen.swift"; sourceTree = "<group>"; };
+		53D7D2C0258B85DA005B015C /* Name_TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name_TextField.swift; sourceTree = "<group>"; };
+		53D7D2C3258B85E6005B015C /* Link_TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link_TextField.swift; sourceTree = "<group>"; };
+		53D7D2C7258B878B005B015C /* TextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Extension.swift"; sourceTree = "<group>"; };
 		53EFF7402589A2CB005886D8 /* Open+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Open+Button.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,8 +91,9 @@
 		533DDA742589780B00799EB3 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				533DDA792589783C00799EB3 /* WebSaver+TableView.swift */,
-				53EFF7402589A2CB005886D8 /* Open+Button.swift */,
+				53D7D2CB258B8B30005B015C /* Table View */,
+				53D7D2CA258B8B29005B015C /* Buttons */,
+				53D7D2BF258B859D005B015C /* TextFields */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -128,7 +143,9 @@
 		53660F10258975EF00167265 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				53EFF7432589A6C3005886D8 /* Detail Web View */,
+				53D35EB0258BB218008B42CB /* Add Button Ext. */,
+				53D7D2C6258B8693005B015C /* TextField Ext. */,
+				53EFF7432589A6C3005886D8 /* Detail Web View Ext. */,
 				533DDA73258977F900799EB3 /* Table View */,
 				533DDA72258977F000799EB3 /* Navigation */,
 			);
@@ -140,6 +157,7 @@
 			children = (
 				53CBA4EA258257FF00AF8A78 /* MainVC.swift */,
 				53C8E5A425899A6B0088054D /* DetailVC.swift */,
+				53D7D2BC258B84DC005B015C /* Add+Website+Screen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -183,11 +201,70 @@
 			path = WebApp;
 			sourceTree = "<group>";
 		};
-		53EFF7432589A6C3005886D8 /* Detail Web View */ = {
+		53D35EAB258BB08D008B42CB /* Add Screen Button */ = {
 			isa = PBXGroup;
 			children = (
+				53D35EAD258BB0BB008B42CB /* Add+Website+Button.swift */,
 			);
-			path = "Detail Web View";
+			path = "Add Screen Button";
+			sourceTree = "<group>";
+		};
+		53D35EAC258BB098008B42CB /* Table View Button */ = {
+			isa = PBXGroup;
+			children = (
+				53EFF7402589A2CB005886D8 /* Open+Button.swift */,
+			);
+			path = "Table View Button";
+			sourceTree = "<group>";
+		};
+		53D35EB0258BB218008B42CB /* Add Button Ext. */ = {
+			isa = PBXGroup;
+			children = (
+				53D35EB2258BB235008B42CB /* AddButton+Extension.swift */,
+			);
+			path = "Add Button Ext.";
+			sourceTree = "<group>";
+		};
+		53D7D2BF258B859D005B015C /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				53D7D2C0258B85DA005B015C /* Name_TextField.swift */,
+				53D7D2C3258B85E6005B015C /* Link_TextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		53D7D2C6258B8693005B015C /* TextField Ext. */ = {
+			isa = PBXGroup;
+			children = (
+				53D7D2C7258B878B005B015C /* TextField+Extension.swift */,
+			);
+			path = "TextField Ext.";
+			sourceTree = "<group>";
+		};
+		53D7D2CA258B8B29005B015C /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				53D35EAC258BB098008B42CB /* Table View Button */,
+				53D35EAB258BB08D008B42CB /* Add Screen Button */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		53D7D2CB258B8B30005B015C /* Table View */ = {
+			isa = PBXGroup;
+			children = (
+				533DDA792589783C00799EB3 /* WebSaver+TableView.swift */,
+			);
+			path = "Table View";
+			sourceTree = "<group>";
+		};
+		53EFF7432589A6C3005886D8 /* Detail Web View Ext. */ = {
+			isa = PBXGroup;
+			children = (
+				53D35EA8258BAF39008B42CB /* DetailWebView+Extension.swift */,
+			);
+			path = "Detail Web View Ext.";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,13 +338,20 @@
 			files = (
 				53CBA4EB258257FF00AF8A78 /* MainVC.swift in Sources */,
 				53C8E5A2258990480088054D /* WebTableView+Delegate.swift in Sources */,
+				53D35EA9258BAF39008B42CB /* DetailWebView+Extension.swift in Sources */,
 				53C8E5A525899A6B0088054D /* DetailVC.swift in Sources */,
 				533DDA8425897DD000799EB3 /* WebCell.swift in Sources */,
 				533DDA7A2589783C00799EB3 /* WebSaver+TableView.swift in Sources */,
+				53D7D2C4258B85E6005B015C /* Link_TextField.swift in Sources */,
 				53EFF7412589A2CB005886D8 /* Open+Button.swift in Sources */,
 				53C0E236258AEC0E00A95597 /* WebsiteCoreData.xcdatamodeld in Sources */,
+				53D35EB3258BB235008B42CB /* AddButton+Extension.swift in Sources */,
+				53D35EAE258BB0BB008B42CB /* Add+Website+Button.swift in Sources */,
+				53D7D2BD258B84DC005B015C /* Add+Website+Screen.swift in Sources */,
 				533DDA762589781F00799EB3 /* TableView+MainVC.swift in Sources */,
 				53CBA4E7258257FF00AF8A78 /* AppDelegate.swift in Sources */,
+				53D7D2C8258B878B005B015C /* TextField+Extension.swift in Sources */,
+				53D7D2C1258B85DA005B015C /* Name_TextField.swift in Sources */,
 				533DDA70258976E500799EB3 /* WebData.swift in Sources */,
 				53CBA4E9258257FF00AF8A78 /* SceneDelegate.swift in Sources */,
 				53660F142589761800167265 /* Navigation+MainVC.swift in Sources */,

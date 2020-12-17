@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainVC: UIViewController {
+class MainVC: UIViewController, addWebsite {
     
     let webTableView = WebSaver_TableView()
     let openButton = Open_Button()
@@ -34,6 +34,11 @@ class MainVC: UIViewController {
         navigationSetup()
         tableViewSetup()
         
+    }
+    
+    func addSite(name: String, link: URL) {
+        webData.append(WebData(website: name, link: link.absoluteURL))
+        webTableView.reloadData()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
